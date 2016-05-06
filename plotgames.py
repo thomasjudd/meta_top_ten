@@ -11,7 +11,7 @@ with open ('games.json', 'r') as fp:
 sorted_games = games.items()
 
 sorted_games.sort(key=lambda tup: tup[1])
-topten = sorted_games[-11:-1]
+topten = sorted_games[-11:]
 
 x_val = [data[0] for data in topten]
 y_val = [data[1] for data in topten]
