@@ -8,9 +8,9 @@ with open ('games.json', 'r') as fp:
   games = json.load(fp)
 
 
-sorted_games = games.items()
+all_games = games.items()
+sorted_games = sorted(all_games)
 
-sorted_games.sort(key=lambda tup: tup[1])
 topten = sorted_games[-10:]
 
 x_val = [data[0] for data in topten]
